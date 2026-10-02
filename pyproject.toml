@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nolicense-nearby-mcp"
+version = "0.1.0"
+description = "MCP server for No License Nearby: search 880+ artist-owned tracks and get sync licenses for social, TV and film."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Ryan Hammer (NoBanks)", email = "nobanksnearby@gmail.com" }
+]
+requires-python = ">=3.11"
+keywords = ["mcp", "model-context-protocol", "music", "sync-licensing", "royalty-free", "video-editing", "music-licensing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-asyncio>=0.21.0", "respx>=0.20.0"]
+
+[project.scripts]
+nolicense-nearby-mcp = "nolicense_mcp.server:main_sync"
+
+[project.urls]
+Homepage = "https://legal.nohumannearby.com"
+Repository = "https://github.com/NoBanks/nolicense-nearby-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nolicense_mcp"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
