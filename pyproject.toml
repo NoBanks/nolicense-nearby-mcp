@@ -34,7 +34,7 @@ dev = ["pytest>=7.0.0", "pytest-asyncio>=0.21.0", "respx>=0.20.0"]
 nolicense-nearby-mcp = "nolicense_mcp.server:main_sync"
 
 [project.urls]
-Homepage = "https://legal.nohumannearby.com"
+Homepage = "https://license.nomusicnearby.com"
 Repository = "https://github.com/NoBanks/nolicense-nearby-mcp"
 
 [tool.hatch.build.targets.wheel]
