@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.NoBanks/nolicense-nearby-mcp",
+  "title": "No License Nearby",
+  "description": "Search 880+ artist-owned tracks and get sync licenses for social, TV and film.",
+  "websiteUrl": "https://license.nomusicnearby.com",
+  "repository": {
+    "url": "https://github.com/NoBanks/nolicense-nearby-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "nolicense-nearby-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

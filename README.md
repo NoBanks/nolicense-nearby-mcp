@@ -8,6 +8,8 @@ build a quote, then hand the buyer the pre-filled license page.
 
 Live catalog: https://license.nomusicnearby.com
 
+<!-- mcp-name: io.github.NoBanks/nolicense-nearby-mcp -->
+
 ## No API key needed
 
 All tools are read-only and use the public catalog. This MCP never submits license requests and never takes payment:
