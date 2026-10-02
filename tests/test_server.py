@@ -62,7 +62,7 @@ async def test_search_combines_filters_locally_and_sends_user_agent():
     assert result["total_matches"] == 1  # hidden track 4 excluded, both filters applied
     assert result["tracks"][0]["title"] == "Showerhead"
     req = route.calls[0].request
-    assert req.headers["user-agent"] == "nolicense-nearby-mcp/0.1.0"
+    assert req.headers["user-agent"] == "nolicense-nearby-mcp/0.1.1"
     assert req.url.params.get("limit") == "1000"
     assert "genre" not in req.url.params
 

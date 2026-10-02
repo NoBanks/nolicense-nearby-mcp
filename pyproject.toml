@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nolicense-nearby-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for No License Nearby: search 880+ artist-owned tracks and get sync licenses for social, TV and film."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -22,7 +22,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "mcp>=1.0.0",
+    "mcp>=1.20.0,<2",
     "httpx>=0.27.0",
     "pydantic>=2.0.0",
 ]

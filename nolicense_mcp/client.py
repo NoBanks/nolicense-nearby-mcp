@@ -13,7 +13,7 @@ from urllib.parse import quote
 import httpx
 
 DEFAULT_BASE_URL = "https://license.nomusicnearby.com"
-USER_AGENT = "nolicense-nearby-mcp/0.1.0"  # Cloudflare blocks default library user agents (verified 2026-10-02)
+USER_AGENT = "nolicense-nearby-mcp/0.1.1"  # Cloudflare blocks default library user agents (verified 2026-10-02)
 TIMEOUT = 30.0
 CATALOG_TTL_SECONDS = 300.0
 
